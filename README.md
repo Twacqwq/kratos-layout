@@ -10,7 +10,7 @@ $ go install github.com/go-kratos/kratos/cmd/kratos/v2@latest
 
 ## Using
 ```bash
-$ kratos new myproject -r xxx
+$ kratos new myproject -r https://github.com/Twacqwq/kratos-layout
 ```
 
 ## Features

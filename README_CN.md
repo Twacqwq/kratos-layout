@@ -8,7 +8,7 @@ $ go install github.com/go-kratos/kratos/cmd/kratos/v2@latest
 
 ## 使用模板
 ```bash
-$ kratos new myproject -r xxx
+$ kratos new myproject -r https://github.com/Twacqwq/kratos-layout
 ```
 
 ## 特性

@@ -11,6 +11,8 @@ $ go install github.com/go-kratos/kratos/cmd/kratos/v2@latest
 ## Using
 ```bash
 $ kratos new myproject -r https://github.com/Twacqwq/kratos-layout
+$ cd myproject
+$ make all # required
 ```
 
 ## Features

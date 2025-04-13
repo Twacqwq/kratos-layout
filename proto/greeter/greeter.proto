@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package proto.greeter;
+
+import "google/api/annotations.proto";
+
+option go_package = "kratos-layout/proto/greeter;greeter";
+option java_multiple_files = true;
+option java_package = "proto.greeter";
+
+service Greeter {
+	rpc CreateGreeter (CreateGreeterRequest) returns (CreateGreeterReply);
+	rpc UpdateGreeter (UpdateGreeterRequest) returns (UpdateGreeterReply);
+	rpc DeleteGreeter (DeleteGreeterRequest) returns (DeleteGreeterReply);
+	rpc GetGreeter (GetGreeterRequest) returns (GetGreeterReply);
+	rpc ListGreeter (ListGreeterRequest) returns (ListGreeterReply);
+	rpc SayHello (HelloRequest) returns (HelloReply) {
+		option (google.api.http) = {
+			get: "/helloworld/{name}"
+		  };
+	}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+	string name = 1;
+}
+  
+// The response message containing the greetings
+message HelloReply {
+	string message = 1;
+}
+
+message CreateGreeterRequest {}
+message CreateGreeterReply {}
+
+message UpdateGreeterRequest {}
+message UpdateGreeterReply {}
+
+message DeleteGreeterRequest {}
+message DeleteGreeterReply {}
+
+message GetGreeterRequest {}
+message GetGreeterReply {}
+
+message ListGreeterRequest {}
+message ListGreeterReply {}
